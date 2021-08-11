@@ -4,9 +4,10 @@ import {getDialog} from "../../services/apis";
 import {src} from '../../utils/consts';
 import Loader from '../Loader';
 
-const TranscriptionContainer = () =>{
+const TranscriptionContainer = ({currentTime}) =>{
   const [dialogs, setDialogs] = useState(); 
   const [isLoading, setIsLoading] = useState(true);
+  
   useEffect(()=>{
     const getCompleteDialog = async(url) => {
       const res = await getDialog(url);
@@ -22,8 +23,8 @@ const TranscriptionContainer = () =>{
     return (
       <div>
         {
-          dialogs.map(({speaker, start, text, data}, index) => (
-            <Transcription key={index} speaker={speaker} start={start} text={text} data={data} />
+          dialogs.map(({speaker, start, text, data, end}, index) => (
+            <Transcription key={index} speaker={speaker} start={start} end={end} text={text} data={data} currentTime={currentTime} />
           ))
         }
       </div>
