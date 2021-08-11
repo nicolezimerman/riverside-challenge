@@ -1,0 +1,36 @@
+.transcription{
+  width: 60%;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--text);
+}
+.transcription-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.avatar{
+  width: 30px;
+}
+.name{
+  font-weight: 700;
+  padding: 5px;
+}
+.time{
+  padding: 5px;
+}
+.dialog{
+  width: 80%;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.selected{
+  background-color: var(--background);
+}
