@@ -14,10 +14,10 @@ const Player = ({ audio, getCurrentTime }) => {
         customVolumeControls={[]}
         listenInterval={50}
         layout="horizontal-reverse"
-        /* customIcons={[
+        customIcons={[
           {rewind: Replay10Icon},
           {forward: Forward10Icon},
-        ]} */
+        ]}
         onListen={(e) => getCurrentTime(e.target.currentTime)}
       />
     </div>

@@ -7,8 +7,9 @@
   box-sizing: border-box;
 }
 
-.player{
+.player {
   width: 80% !important;
   background-color: var(--background);
+  color: var(--text);
 }
 
