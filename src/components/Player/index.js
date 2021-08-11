@@ -12,7 +12,7 @@ const Player = ({ audio, getCurrentTime }) => {
         src={audio}
         customAdditionalControls={[]}
         customVolumeControls={[]}
-        listenInterval={100}
+        listenInterval={50}
         layout="horizontal-reverse"
         /* customIcons={[
           {rewind: Replay10Icon},

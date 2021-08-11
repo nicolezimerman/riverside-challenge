@@ -23,8 +23,8 @@ const TranscriptionContainer = ({currentTime}) =>{
     return (
       <div>
         {
-          dialogs.map(({speaker, start, text, data, end}, index) => (
-            <Transcription key={index} speaker={speaker} start={start} end={end} text={text} data={data} currentTime={currentTime} />
+          dialogs.map(({speaker, start, data, end}, index) => (
+            <Transcription key={index} speaker={speaker} start={start} end={end} data={data} currentTime={currentTime} />
           ))
         }
       </div>

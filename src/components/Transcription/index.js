@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
 
-const Transcription = ({ speaker, start, end, text, data, currentTime }) => {
+const Transcription = ({ speaker, start, end, data, currentTime }) => {
   const [isSelected, setIsSelected] = useState(false);
 
   useEffect(() => {
@@ -12,9 +12,18 @@ const Transcription = ({ speaker, start, end, text, data, currentTime }) => {
         setIsSelected(false);
       }
     };
-
     checkSelected();
   }, [currentTime]);
+
+
+    const checkSubSelected = (t) => {
+      if (currentTime >= t[1] && currentTime <= t[2]) {
+        return <span key={Math.random()} className="selectedText">{t[0]} </span>
+      } else {
+        return <span key={Math.random()}>{t[0]} </span>
+      }
+    };
+
 
   const millisToMinutesAndSeconds = (millis) => {
     var minutes = Math.floor(millis / 60);
@@ -30,7 +39,6 @@ const Transcription = ({ speaker, start, end, text, data, currentTime }) => {
 
   return (
     <div className="transcription">
-      <div>{isSelected == true ? "selected" : "not selected"}</div>
       <section className="transcription-header">
         <img
           className="avatar"
@@ -41,7 +49,7 @@ const Transcription = ({ speaker, start, end, text, data, currentTime }) => {
         <p className="time">{millisToMinutesAndSeconds(start)}</p>
       </section>
       <section className={`dialog ${isSelected && "selected"}`}>
-        <p>{text}</p>
+        <p>{data.map((t)=> checkSubSelected(t))}</p>
       </section>
     </div>
   );

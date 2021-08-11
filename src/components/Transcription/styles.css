@@ -13,6 +13,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  width: 20%;
+  max-width: 20%;
 }
 .avatar{
   width: 30px;
@@ -26,11 +28,17 @@
 }
 .dialog{
   width: 80%;
-  padding: 10px;
+  max-width: 80%;
+  padding: 5px 10px;
   font-weight: 500;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .selected{
   background-color: var(--background);
+}
+
+.selectedText{
+  color: var(--primary);
 }
