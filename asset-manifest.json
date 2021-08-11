@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/riverside-challenge/static/css/main.d63fa2dd.chunk.css",
+    "main.js": "/riverside-challenge/static/js/main.088b1e81.chunk.js",
+    "main.js.map": "/riverside-challenge/static/js/main.088b1e81.chunk.js.map",
+    "runtime-main.js": "/riverside-challenge/static/js/runtime-main.3483b5f9.js",
+    "runtime-main.js.map": "/riverside-challenge/static/js/runtime-main.3483b5f9.js.map",
+    "static/css/2.3e35cbb6.chunk.css": "/riverside-challenge/static/css/2.3e35cbb6.chunk.css",
+    "static/js/2.9fc1e0cc.chunk.js": "/riverside-challenge/static/js/2.9fc1e0cc.chunk.js",
+    "static/js/2.9fc1e0cc.chunk.js.map": "/riverside-challenge/static/js/2.9fc1e0cc.chunk.js.map",
+    "static/js/3.3b2898fe.chunk.js": "/riverside-challenge/static/js/3.3b2898fe.chunk.js",
+    "static/js/3.3b2898fe.chunk.js.map": "/riverside-challenge/static/js/3.3b2898fe.chunk.js.map",
+    "index.html": "/riverside-challenge/index.html",
+    "static/css/2.3e35cbb6.chunk.css.map": "/riverside-challenge/static/css/2.3e35cbb6.chunk.css.map",
+    "static/css/main.d63fa2dd.chunk.css.map": "/riverside-challenge/static/css/main.d63fa2dd.chunk.css.map",
+    "static/js/2.9fc1e0cc.chunk.js.LICENSE.txt": "/riverside-challenge/static/js/2.9fc1e0cc.chunk.js.LICENSE.txt",
+    "static/media/logo.b6bcc1f1.svg": "/riverside-challenge/static/media/logo.b6bcc1f1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3483b5f9.js",
+    "static/css/2.3e35cbb6.chunk.css",
+    "static/js/2.9fc1e0cc.chunk.js",
+    "static/css/main.d63fa2dd.chunk.css",
+    "static/js/main.088b1e81.chunk.js"
+  ]
+}
