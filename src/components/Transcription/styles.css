@@ -7,7 +7,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   color: var(--text);
+  box-sizing: border-box;
 }
+
 .transcription-header{
   display: flex;
   flex-direction: row;
@@ -26,6 +28,7 @@
 .time{
   padding: 5px;
 }
+
 .dialog{
   width: 80%;
   max-width: 80%;
@@ -33,6 +36,39 @@
   font-weight: 500;
   border-radius: 10px;
   box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .transcription{
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  .transcription-header{
+    flex-direction: column;
+    max-width: 20%;
+  } 
+  .name{
+    margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+  .time{
+    margin: 0px;
+  }
+  
+  .dialog{
+    padding: 0px 10px; 
+    box-sizing: content-box; 
+  }
+  .dialog p{
+    margin-top: 0;
+  }
+
 }
 
 .selected{

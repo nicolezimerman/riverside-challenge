@@ -4,6 +4,9 @@
   --backgroundDark: #1D2329;
   --primary: #1363CF;
 }
+html{
+  scrollbar-color: var(--backgroundDark) var(--background);
+}
 .App {
   min-height: 100vh;
   background-color: var(--backgroundDark);

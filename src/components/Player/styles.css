@@ -13,3 +13,8 @@
   color: var(--text);
 }
 
+@media only screen and (max-width: 600px) {
+  .player {
+    width: 100% !important;
+  }
+}
