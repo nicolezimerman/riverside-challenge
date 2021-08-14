@@ -1,7 +1,6 @@
-# ✨ RIVERSIED CODING CHALLENGE ![Status](https://img.shields.io/badge/Status-FINISHED-brightgreen)
+# ✨ RIVERSIDE CODING CHALLENGE ![Status](https://img.shields.io/badge/Status-FINISHED-brightgreen)
 
 This is a transcription component created with CRA. The objective is to make a app which renders the following attached JSON into a transcription view.
-
 The transcription view should have an audio player. The words are highlighted in sync with the audio.
 
 ## 🎨 Preview
